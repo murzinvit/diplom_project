@@ -8,12 +8,12 @@
     apiVersion: v1
     kind: Service
     metadata:
-      name: prometheus-lb
+      name: promet-svc-lb
     spec:
       ports:
       - port: 80
-        name: prometheus-lb
-      targetPort: 80
+        name: promet-svc-lb
+        targetPort: 80
       selector:
         app: my-prometheus-server
       type: LoadBalancer

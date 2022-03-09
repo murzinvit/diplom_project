@@ -8,11 +8,11 @@
     apiVersion: v1
     kind: Service
     metadata:
-      name: prometheus-svc
+      name: prometheus-lb
     spec:
       ports:
       - port: 80
-        name: phpmyadmin 
+        name: prometheus-lb
       targetPort: 80
       selector:
         app: my-prometheus-server

@@ -6,18 +6,18 @@
 
  kubectl apply -f - << EOF
  apiVersion: v1
- kind: Service
- metadata:
-   name: prometheus-svc
- spec:
-   ports:
-   - port: 80
-     name: phpmyadmin 
-     targetPort: 80
-   selector:
-     app: my-prometheus-server
-   type: LoadBalancer
- EOF
+kind: Service
+metadata:
+  name: prometheus-svc
+spec:
+  ports:
+  - port: 80
+    name: phpmyadmin 
+    targetPort: 80
+  selector:
+    app: my-prometheus-server
+  type: LoadBalancer
+EOF
 
 
 

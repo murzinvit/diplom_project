@@ -10,6 +10,7 @@
 `helm repo add stable https://charts.helm.sh/stable` </br>
 `helm repo update` </br>
 `kubectl create namespace monitoring` </br>
+`helm search repo prometheus-community` </br>
 `helm install my-prometheus stable/prometheus -n monitoring` </br>
 
     kubectl apply -f - << EOF

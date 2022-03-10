@@ -5,6 +5,11 @@
 `pip install ansible-base==2.10.17` - обновление ansible  </br>
 `git clone https://github.com/ahmetb/kubectx` - установка kubens </br>
 `kubectl cluster-info` </br>
+---
+`helm repo add stable https://charts.helm.sh/stable` </br>
+`helm repo update` </br>
+`kubectl create namespace monitoring` </br>
+`helm install my-prometheus stable/prometheus -n monitoring` </br>
 
     kubectl apply -f - << EOF
     apiVersion: v1

@@ -3,6 +3,8 @@
 
 ---
 `pip install ansible-base==2.10.17` - обновление ansible  </br>
+`git clone https://github.com/ahmetb/kubectx` - установка kubens </br>
+
 
     kubectl apply -f - << EOF
     apiVersion: v1

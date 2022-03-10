@@ -1,3 +1,7 @@
+  resource "yandex_iam_service_account" "admin" {
+    name        = "admin"
+    description = "service account to manage VMs"
+  }
 
   resource "yandex_iam_service_account" "instances-editor" {
     name        = "instances"
@@ -36,5 +40,15 @@
 
     members = [
     "serviceAccount:${yandex_iam_service_account.docker-registry.id}",
+  ]
+  }
+
+  resource "yandex_resourcemanager_folder_iam_binding" "admin" {
+    folder_id = var.folder_id
+
+    role = "admin"
+
+    members = [
+    "serviceAccount:${yandex_iam_service_account.admin.id}",
   ]
   }

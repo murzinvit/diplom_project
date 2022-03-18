@@ -8,3 +8,6 @@
 ![](https://github.com/murzinvit/screen_1/blob/d5a3c253a34fa26adc10e791f47fc17165958ee6/Docker_Hub.jpg) </br>
 
 
+![](https://github.com/murzinvit/screen_1/blob/e1ab992d31b9811ed54954d5d35cc3639417d74b/Kubectl_get_ns.jpg) </br>
+
+

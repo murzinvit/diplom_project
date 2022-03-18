@@ -12,3 +12,6 @@
 ![](https://github.com/murzinvit/screen_1/blob/e1ab992d31b9811ed54954d5d35cc3639417d74b/Kubectl_get_ns.jpg) </br>
 
 
+![](https://github.com/murzinvit/screen_1/blob/9d3bea65c5aec7628e9babc9212c357b7acdfd7a/Prometheus.jpg) </br>
+
+

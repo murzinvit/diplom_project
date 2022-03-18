@@ -1,3 +1,7 @@
+  resource "yandex_iam_service_account" "admin" {
+    name        = "admin"
+  }
+
   resource "yandex_iam_service_account" "instances-editor" {
     name        = "instances"
   }
@@ -37,3 +41,12 @@
     "serviceAccount:${yandex_iam_service_account.admin.id}",
   ]
   }
+
+resource "yandex_container_registry_iam_binding" "puller" {
+  registry_id = yandex_container_registry.registry.id
+  role        = "container-registry.images.puller"
+
+  members = [
+    "system:allUsers",
+  ]
+}

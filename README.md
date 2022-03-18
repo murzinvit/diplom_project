@@ -1,5 +1,6 @@
 #### diplom_project </br>
 
+Приложение для деплоя: https://github.com/murzinvit/testapp </br>
 Для ci и push в DockerHub использовал Github Actions https://github.com/murzinvit/testapp/actions </br>
 Подключение к кластеру: `yc managed-kubernetes cluster get-credentials --id catndfd4co09qp8i74bt --external --force` </br>
 

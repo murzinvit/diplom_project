@@ -1,15 +1,21 @@
+# Variables
+
 variable "token" {
-  default = ""
+  type = string
+  description = "Yandex Cloud API key"
 }
 
 variable "cloud_id" {
-  default = "b1gthe1naa936dn511am"
+  type = string
+  description = "Yandex Cloud id"
 }
 
 variable "folder_id" {
-  default = "b1gogcvb32hqskgu5trk"
+  type = string
+  description = "Yandex Cloud folder id"
 }
 
 variable "zone" {
-  default = "ru-central1-a"
+  type = string
+  description = "Yandex default region"
 }

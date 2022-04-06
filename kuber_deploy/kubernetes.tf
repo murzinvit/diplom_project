@@ -1,5 +1,5 @@
 resource "yandex_kubernetes_cluster" "test-kuber" {
-  name        = "test-kuber"
+  name        = var.cluster_name
   description = "description"
 
   network_id = yandex_vpc_network.network-1.id
@@ -24,7 +24,7 @@ resource "yandex_kubernetes_cluster" "test-kuber" {
       }
     }
 
-    version   = "1.21"
+    version   = var.cluster_version
     public_ip = true
 
     maintenance_policy {
@@ -55,8 +55,8 @@ resource "yandex_kubernetes_cluster" "test-kuber" {
   kms_provider {
     key_id = yandex_kms_symmetric_key.key-a.id
   }
-  release_channel = "STABLE"
-  network_policy_provider = "CALICO"
+  release_channel = var.cluster_release_channel
+  network_policy_provider = var.network_policy_provider
 }
 
 resource "yandex_kubernetes_node_group" "kuber_node_group" {

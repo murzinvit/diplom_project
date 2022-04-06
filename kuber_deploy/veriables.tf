@@ -1,21 +1,36 @@
 # Variables
 
-variable "token" {
+variable "ya_token" {
   type = string
-  description = "Yandex Cloud API key"
 }
 
-variable "cloud_id" {
+variable "ya_cloud_id" {
   type = string
-  description = "Yandex Cloud id"
 }
 
-variable "folder_id" {
+variable "ya_folder_id" {
   type = string
-  description = "Yandex Cloud folder id"
 }
 
-variable "zone" {
+variable "ya_region" {
   type = string
-  description = "Yandex default region"
+}
+
+variable "cluster_name" {
+  type = string
+}
+
+variable "cluster_version" {
+  type = string
+  default = "1.15"
+}
+
+variable "cluster_release_channel" {
+  type = string
+  default = "STABLE"
+}
+
+variable "network_policy_provider" {
+  type = string
+  default = "CALICO"
 }

@@ -1,5 +1,5 @@
 provider "yandex" {
-  token     = var.token
-  cloud_id  = var.cloud_id
-  folder_id = var.folder_id
+  token     = var.ya_token
+  cloud_id  = var.ya_cloud_id
+  folder_id = var.ya_folder_id
 }

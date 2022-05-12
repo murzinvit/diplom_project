@@ -18,6 +18,6 @@
 
 ![](https://github.com/murzinvit/screen_1/blob/ceba416f11871560b4c046540ec449c9a1df19e5/HelloWorld.jpg) </br>
 
-![Зеркало терраформ:] (https://cloud.yandex.ru/docs/tutorials/infrastructure-management/terraform-quickstart) </br>
+[Зеркало терраформ:] (https://cloud.yandex.ru/docs/tutorials/infrastructure-management/terraform-quickstart) </br>
 
 
